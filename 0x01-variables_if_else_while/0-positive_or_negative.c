@@ -3,8 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - main function
- * Return 0 if successful
+ * main - Entry point
+ *
+ * Return: 0 if successful
  */
 int main(void)
 {
@@ -12,7 +13,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
 
 	if (n > 0)
 	{
@@ -26,7 +26,7 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-	
+
 	return (0);
 }
 
