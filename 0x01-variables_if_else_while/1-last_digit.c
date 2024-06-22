@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>  // Include the standard I/O library
+#include <stdio.h>
 
 /**
  * main - Entry point
