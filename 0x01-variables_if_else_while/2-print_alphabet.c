@@ -3,18 +3,19 @@
 /**
  * main - Entry point
  *
- * Return: 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-    char letter;
+    char letter = 'a';
 
-    for (letter = 'a'; letter <= 'z'; letter++)
+    while (letter <= 'z')
     {
         putchar(letter);
+        letter++;
     }
     putchar('\n');
 
     return (0);
 }
-i
+
