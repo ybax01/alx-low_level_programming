@@ -5,12 +5,17 @@ void print_alphabet(void);
 
 void print_alphabet_x10(void)
 {
-
+	int j=0;
+	while(j != 10)
+	{
+		print_alphabet();
+		j++;
+	}
 }
 
 void print_alphabet(void)
 {
-	char c="abcdefghijklmnopqrtuvwxyz\n";
+	char c[]="abcdefghijklmnopqrtuvwxyz\n";
 	int i=0;
 
 	while (c[i] != '\0')
