@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
- * main - check the code
  * print_alphabet - prints the entire alphabet in lowercase
  *
  * Return: Always 0.
  */
- 
 void print_alphabet(void)
 {
 	char c[] = "abcdefghijklmnopqrstuvwxyz\n";
