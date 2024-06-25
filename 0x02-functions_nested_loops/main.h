@@ -20,7 +20,7 @@ void print_alphabet(void)
 
 	while (c[i] != '\0')
 	{
-		_putchar(c);
+		_putchar(c[i]);
 		i++;
 	}
 	_putchar(c[i]);
