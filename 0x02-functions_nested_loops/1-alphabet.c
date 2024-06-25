@@ -8,7 +8,7 @@
  
 void print_alphabet(void)
 {
-	char c[]="abcdefghijklmnopqrtuvwxyz\n";
+	char c[]="abcdefghijklmnopqrstuvwxyz\n";
 	int i=0;
 
 	while (c[i] != '\0')
@@ -16,5 +16,4 @@ void print_alphabet(void)
 		_putchar(c[i]);
 		i++;
 	}
-	_putchar(c[i]);
 }
