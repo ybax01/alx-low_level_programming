@@ -3,14 +3,20 @@
 int _putchar(char c);
 void print_alphabet(void);
 
+void print_alphabet_x10(void)
+{
+
+}
+
 void print_alphabet(void)
 {
-	char c='a';
+	char c="abcdefghijklmnopqrtuvwxyz\n";
+	int i=0;
 
-	while (c!=('z'+1))
+	while (c[i] != '\0')
 	{
 		_putchar(c);
-		c*=c*+1;
+		i++;
 	}
-	_putchar('\n');
+	_putchar(c[i]);
 }
