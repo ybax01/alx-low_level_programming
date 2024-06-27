@@ -7,11 +7,11 @@
  */
 void print_numbers(void)
 {
-	char n = "0123456789\n";
-	int i = 0;
+	char c = '0';
 
-	while (i < 11)
+	while (c < '9')
 	{
 		_putchar(n[i]);
+		c++;
 	}
 }
