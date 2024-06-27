@@ -7,7 +7,7 @@
  */
 void print_most_numbers(void)
 {
-	char n = "0123456789\n";
+	char c = '0';
 
 	while (c <= '9')
 	{
