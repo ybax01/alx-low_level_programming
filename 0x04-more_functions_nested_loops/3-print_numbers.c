@@ -9,7 +9,7 @@ void print_numbers(void)
 {
 	char n = "0123456789\n";
 	int i = 0;
-	
+
 	while (i < 11)
 	{
 		_putchar(n[i]);
