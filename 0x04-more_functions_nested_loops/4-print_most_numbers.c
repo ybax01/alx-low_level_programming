@@ -8,14 +8,14 @@
 void print_most_numbers(void)
 {
 	char n = "0123456789\n";
-	int i = 0;
 
-	while (i < 11)
+	while (c <= '9')
 	{
-		if (n[i] == '2' || n[i] == '4')
+		if (c == '2' || c == '4')
 		{
 			continue;
 		}
-		_putchar(n[i]);
+		_putchar(c);
 	}
+	_putchar('\n');
 }
