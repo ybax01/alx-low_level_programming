@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m 'C nested loops and functions project'
+git push
