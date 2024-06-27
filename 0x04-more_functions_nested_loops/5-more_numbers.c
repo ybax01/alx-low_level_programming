@@ -7,25 +7,17 @@
  */
 void more_numbers(void)
 {
-	char n = '0';
+	char n[] = "01234567891011121314\n";
 	int i = 0;
+	int j = 0;
 
 	while (i < 10)
 	{
-		n = '0';
-		while (n <= '9')
+		j = 0;
+		while (j < 21)
 		{
-			_putchar(n);
-			n++;
+			_putchar(n[j]);
 		}
-		n = '0';
-		while (n <= '4')
-		{
-			_putchar('1');
-			_putchar(n);
-			n++;
-		}
-		_putchar('\n');
 		i++;
 	}
 }
