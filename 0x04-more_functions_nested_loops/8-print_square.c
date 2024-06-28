@@ -21,7 +21,9 @@ void print_square(int n)
 		while (j < n)
 		{
 			_putchar('#');
+			j++;
 		}
 		_putchar('\n');
+		i++;
 	}
 }
