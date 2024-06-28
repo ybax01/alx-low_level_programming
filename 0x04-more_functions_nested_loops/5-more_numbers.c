@@ -17,6 +17,7 @@ void more_numbers(void)
 		while (j < 21)
 		{
 			_putchar(n[j]);
+			j++;
 		}
 		i++;
 	}
