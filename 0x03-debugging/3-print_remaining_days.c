@@ -5,16 +5,18 @@
 * print_remaining_days - takes a date and prints how many days are
 * left in the year, taking leap years into account
 * @month: month in number format
-* @day: day of month
+* @day: day of year
 * @year: year
 * Return: void
 */
 
 void print_remaining_days(int month, int day, int year)
 {
-    if ((year % 4 == 0 && year % 400 == 0) || (year % 100 == 0))
+    // Correct leap year calculation
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
     {
-        if (month >= 2 && day >= 60)
+        // Leap year
+        if (month > 2 || (month == 2 && day == 60))
         {
             day++;
         }
@@ -24,8 +26,10 @@ void print_remaining_days(int month, int day, int year)
     }
     else
     {
+        // Not a leap year
         if (month == 2 && day == 60)
         {
+            // Invalid date: February 29 in a non-leap year
             printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
         }
         else
