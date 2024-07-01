@@ -2,18 +2,18 @@
 
 /**
  * puts2 - prints every other char of string string with 1st one
- * @s: adress of string start
+ * @str: adress of string start
  *
  */
-void puts2(char *s)
+void puts2(char *str)
 {
 	int i = 0;
 
-	while (s[i] != '\0')
+	while (str[i] != '\0')
 	{
 		if (i % 2 == 0)
 		{
-			_putchar(s[i]);
+			_putchar(str[i]);
 		}
 		i++;
 	}
