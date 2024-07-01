@@ -1,23 +1,29 @@
 #include "main.h"
 
 /**
- * print_rev - prints string in reverse
+ * rev_string - reverse string
  * @s: adress of string start
  *
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i = 0;
+	int j = 0;
+	char *c;
 
 	while (s[i] != '\0')
 	{
+		c[i] = s[i];
 		i++;
 	}
+	c[i] = '\0';
 	i--;
+	j = 0;
 	while (i != -1)
 	{
-		_putchar(s[i]);
+		s[j] = c[i];
 		i--;
+		j++;
 	}
-	_putchar('\n');
+	s[j] = '\0';
 }
