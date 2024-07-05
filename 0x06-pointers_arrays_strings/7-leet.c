@@ -8,8 +8,8 @@
 char *leet(char *str)
 {
 	char *ptr = str;
-	char *leettab = "4307143071";
-	char *letters = "aeotlAEOTL";
+	char leettab[] = "4307143071";
+	char letters[] = "aeotlAEOTL";
 	int i, j;
 
 	while (*ptr != '\0')
