@@ -1,3 +1,6 @@
+#ifndef NULL
+#define NULL ((void *)0)
+#endif
 
 int _putchar(char c);
 
