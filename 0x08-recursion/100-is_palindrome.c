@@ -11,8 +11,9 @@ int _pldchecker(char *s, int left, int right);
  */
 int is_palindrome(char *s)
 {
-    int l = _strlen_recursion(s);
-    return _pldchecker(s, 0, l - 1);
+	int l = _strlen_recursion(s);
+
+	return (_pldchecker(s, 0, l - 1));
 }
 
 /**
@@ -25,11 +26,10 @@ int is_palindrome(char *s)
  */
 int _pldchecker(char *s, int left, int right)
 {
-    if (left >= right)
-        return 1;
+	if (left >= right)
+		return (1);
+	if (s[left] != s[right])
+		return (0);
 
-    if (s[left] != s[right])
-        return 0;
-
-    return _pldchecker(s, left + 1, right - 1);
+	return (_pldchecker(s, left + 1, right - 1));
 }
