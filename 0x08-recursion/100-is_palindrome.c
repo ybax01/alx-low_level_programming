@@ -1,6 +1,8 @@
 #include "main.h"
 #include "2-strlen_recursion.c"
 
+int _pldchecker(char *s, int left, int right);
+
 /**
  * is_palindrome - Checks if a string is a palindrome recursively.
  * @s: Pointer to the string
@@ -9,12 +11,12 @@
  */
 int is_palindrome(char *s)
 {
-    int l = _strlen(s);
+    int l = _strlen_recursion(s);
     return _pldchecker(s, 0, l - 1);
 }
 
 /**
- * _is_palindrome - Palindrome helper function
+ * _pldchecker - Palindrome helper function
  * @s: Pointer to the string.
  * @left: Left index
  * @right: Right index
