@@ -5,7 +5,7 @@
  * _calloc - allocates a memory for an array
  * @nmemb: numb of blocks
  * @size: block size
- * Return: null if error or parameters are 0, otherwise return the pointer needed
+ * Return: pointer to new array, null if a problem occurs
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
