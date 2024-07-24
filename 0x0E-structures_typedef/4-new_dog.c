@@ -37,6 +37,29 @@ char *_strcopy(char *dest, char *src)
 }
 
 /**
+ * create_copy - Creates a copy of a string.
+ * @src: The source string to be copied.
+ *
+ * Return: A pointer to the newly allocated space in memory with the copied
+ * string, or NULL if memory allocation fails.
+ */
+char *create_copy(char *src)
+{
+	char *copy;
+
+	if (src == NULL)
+		return (NULL);
+
+	copy = malloc(_strlen(src) + 1);
+	if (copy == NULL)
+		return (NULL);
+
+	_strcopy(copy, src);
+
+	return (copy);
+}
+
+/**
  * new_dog - Creates a new dog.
  * @name: The name of the dog.
  * @age: The age of the dog in years.
@@ -59,36 +82,20 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	/* Allocate memory and copy the name */
-	if (name != NULL)
+	new_name = create_copy(name);
+	if (name != NULL && new_name == NULL)
 	{
-		new_name = malloc(_strlen(name) + 1);
-		if (new_name == NULL)
-		{
-			free(new_dog);
-			return (NULL);
-		}
-		_strcopy(new_name, name);
-	}
-	else
-	{
-		new_name = NULL;
+		free(new_dog);
+		return (NULL);
 	}
 
 	/* Allocate memory and copy the owner */
-	if (owner != NULL)
+	new_owner = create_copy(owner);
+	if (owner != NULL && new_owner == NULL)
 	{
-		new_owner = malloc(_strlen(owner) + 1);
-		if (new_owner == NULL)
-		{
-			free(new_name);
-			free(new_dog);
-			return (NULL);
-		}
-		_strcopy(new_owner, owner);
-	}
-	else
-	{
-		new_owner = NULL;
+		free(new_name);
+		free(new_dog);
+		return (NULL);
 	}
 
 	/* Initialize the new dog structure */
