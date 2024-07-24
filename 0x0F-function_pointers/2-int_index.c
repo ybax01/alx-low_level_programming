@@ -3,7 +3,6 @@
  * @array: The array to search
  * @size: The number of elements in the array
  * @cmp: Pointer to the function to compare values
- * 
  * Return: The index of the first matching element, or -1 if no match or error
  */
 int int_index(int *array, int size, int (*cmp)(int))
