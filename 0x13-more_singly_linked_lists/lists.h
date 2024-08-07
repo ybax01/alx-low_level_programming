@@ -1,7 +1,4 @@
-#ifndef NULL
-#define NULL ((void *)0)
-#endif
-
+#include <stddef.h>
 
 #ifndef LISTS_H
 #define LISTS_H
