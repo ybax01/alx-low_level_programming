@@ -1,3 +1,8 @@
+#ifndef NULL
+#define NULL ((void *)0)
+#endif
+
+
 #ifndef LISTS_H
 #define LISTS_H
 
